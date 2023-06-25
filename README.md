@@ -15,7 +15,7 @@ necessary docker infrastructure on an instance provided by a cloud provider.
 # Deployment
 
 The project is supposed to be in the cloud but for this example we gonna work 
-with a virtualbox ubuntu server with Vagrant, because as a wise men once said: 
+with a virtualbox ubuntu server with Vagrant, because as a wise man once said: 
         **'There is no cloud it’s just someone else’s computer'**
 but for the school it will be deployed in microsoft azure (or AWS or any cloud platform that you like).
 so you need first to setup your environment variables file .env and place it in resources/.env
