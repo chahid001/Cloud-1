@@ -33,9 +33,13 @@ after that connect with vagrant ssh
 ```
 and copy your host ssh key to the server
 ```bash
-  vagrant up
+  echo "<ssh_public_key>" >> ~/.ssh/authorized_keys
 ```
-
+then in your host you can begin deployment with Ansible
+```bash
+  ansible-playbook -i inventory playbook.yaml
+```
+and dont forget to replace your server IP address to the **Inventory**
 ## About the project
 
 In this version, each process will have its container. You CANNOT deploy the same
