@@ -13,7 +13,7 @@ necessary docker infrastructure on an instance provided by a cloud provider.
 ![Markup](https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white) 
 
 # Deployment
-## Ansible version
+# Ansible version
 The project is supposed to be in the cloud but for this example, we going to work 
 with a VirtualBox ubuntu server with Vagrant, because as a wise man once said: 
         **' There is no cloud it’s just someone else’s computer**
@@ -40,11 +40,19 @@ then in your host, you can begin deployment with Ansible
   ansible-playbook -i inventory playbook.yaml
 ```
 and don't forget to replace your server IP address in the **Inventory** file
-## Terraform version
+# Terraform version
 It's the same thing as the Ansible version unless here we gonna automate the deployment of the infrastructure (Infrastructure as a code)
 instead of deploying it manually on the Cloud provider website.
+##Azure
+Install the azure CLI
 
-First of all you need to Authenticate with your cloud provider CLI in my case its Azure CLI
+```bash
+  brew update && brew install azure-cli
+```
+
+##AWS
+Install aws CLI
+
 ## About the project
 
 In this version, each process will have its container. You CAN NOT deploy the same
