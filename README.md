@@ -1,5 +1,5 @@
 
-# Cloud-1
+# Cloud-1 (in-progress 80%)
 
 This topic is inspired by the subject Inception. The goal is to deploy your site and the
 necessary docker infrastructure on an instance provided by a cloud provider.
