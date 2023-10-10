@@ -55,8 +55,9 @@ Then
   az login --use-device-code
 ```
 go to the website, enter the code, and sign in with your azure account
+and verify with
 ```bash
-  brew update && brew install azure-cli
+  az account show
 ```
 
 ## AWS
