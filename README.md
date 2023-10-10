@@ -63,7 +63,7 @@ and verify with
 ## AWS
 First of all, you need to authenticate with the cloud provider, we're doing that with the CLI
 
-so you need to install the aws CLI by following these ![steps](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+so you need to install the AWS CLI by following these [steps](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 ## About the project
 
