@@ -43,7 +43,8 @@ and don't forget to replace your server IP address in the **Inventory** file
 ## Terraform version
 It's the same thing as the Ansible version unless here we gonna automate the deployment of the infrastructure (Infrastructure as a code)
 instead of deploying it manually on the Cloud provider website.
-Soon ...
+
+First of all you need to Authenticate with your cloud provider CLI in my case its Azure CLI
 ## About the project
 
 In this version, each process will have its container. You CAN NOT deploy the same
