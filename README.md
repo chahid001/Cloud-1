@@ -43,15 +43,26 @@ and don't forget to replace your server IP address in the **Inventory** file
 # Terraform version
 It's the same thing as the Ansible version unless here we gonna automate the deployment of the infrastructure (Infrastructure as a code)
 instead of deploying it manually on the Cloud provider website.
-##Azure
-Install the azure CLI
+## Azure
+First of all, you need to authenticate with the cloud provider, we're doing that with the CLI
+### Install the azure CLI
 
 ```bash
   brew update && brew install azure-cli
 ```
+Then 
+```bash
+  az login --use-device-code
+```
+go to the website, enter the code, and sign in with your azure account
+```bash
+  brew update && brew install azure-cli
+```
 
-##AWS
-Install aws CLI
+## AWS
+First of all, you need to authenticate with the cloud provider, we're doing that with the CLI
+
+so you need to install the aws CLI by following these ![steps](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 ## About the project
 
