@@ -16,7 +16,7 @@ necessary docker infrastructure on an instance provided by a cloud provider.
 # Ansible version
 The project is supposed to be in the cloud but for this example, we going to work 
 with a VirtualBox ubuntu server with Vagrant, because as a wise man once said: 
-        **' There is no cloud it’s just someone else’s computer**
+        **' There is no cloud it’s just someone else’s computer '**
 but for the school, it will be deployed in Microsoft Azure (or AWS or any cloud platform you like).
 so you need first to set up your environment variables file .env and place it in resources/.env
 then run your vagrant server
