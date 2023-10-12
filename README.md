@@ -1,5 +1,5 @@
 
-# Cloud-1
+# Cloud-1 (in-progress 80%)
 
 This topic is inspired by the subject Inception. The goal is to deploy your site and the
 necessary docker infrastructure on an instance provided by a cloud provider.
@@ -7,16 +7,17 @@ necessary docker infrastructure on an instance provided by a cloud provider.
 # Tech used in the project
 
 ![Markup](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+![Markup](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Markup](https://img.shields.io/badge/Ansible-000000?style=for-the-badge&logo=ansible&logoColor=white)
 ![Markup](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white) 
 ![Markup](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white) 
 ![Markup](https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white) 
 
 # Deployment
-## Ansible version
+# Ansible version
 The project is supposed to be in the cloud but for this example, we going to work 
 with a VirtualBox ubuntu server with Vagrant, because as a wise man once said: 
-        **' There is no cloud it’s just someone else’s computer**
+        **' There is no cloud it’s just someone else’s computer '**
 but for the school, it will be deployed in Microsoft Azure (or AWS or any cloud platform you like).
 so you need first to set up your environment variables file .env and place it in resources/.env
 then run your vagrant server
@@ -40,10 +41,31 @@ then in your host, you can begin deployment with Ansible
   ansible-playbook -i inventory playbook.yaml
 ```
 and don't forget to replace your server IP address in the **Inventory** file
-## Terraform version
+# Terraform version
 It's the same thing as the Ansible version unless here we gonna automate the deployment of the infrastructure (Infrastructure as a code)
 instead of deploying it manually on the Cloud provider website.
-Soon ...
+## Azure
+First of all, you need to authenticate with the cloud provider, we're doing that with the CLI
+### Install the azure CLI
+
+```bash
+  brew update && brew install azure-cli
+```
+Then 
+```bash
+  az login --use-device-code
+```
+go to the website, enter the code, and sign in with your azure account
+and verify with
+```bash
+  az account show
+```
+
+## AWS
+First of all, you need to authenticate with the cloud provider, we're doing that with the CLI
+
+so you need to install the AWS CLI by following these [steps](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
 ## About the project
 
 In this version, each process will have its container. You CAN NOT deploy the same
