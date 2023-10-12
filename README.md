@@ -60,7 +60,16 @@ and verify with
 ```bash
   az account show
 ```
+after that, you can add your public ssh-key to the main.tf and also we have customdata.tpl so we can install python (for Ansible)
+then to check
 
+```bash
+  terraform plan
+```
+and 
+```bash
+  terraform apply -auto-approve
+```
 ## AWS
 First of all, you need to authenticate with the cloud provider, we're doing that with the CLI
 
