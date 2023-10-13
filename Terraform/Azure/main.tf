@@ -117,3 +117,12 @@ resource "azurerm_linux_virtual_machine" "inception_server" {
     version   = "latest"
   }
 }
+
+data "azurerm_public_ip" "inp_pub_ip" {
+  name = "inception_public_ip"
+  resource_group_name = azurerm_resource_group.inp.name
+}
+
+output "pub_ip" {
+  value = "${azurerm_linux_virtual_machine.inception_server.name}: ${data.azurerm_public_ip.inp_pub_ip.ip_address}"
+}
