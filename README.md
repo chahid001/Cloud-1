@@ -1,8 +1,7 @@
 
 # Cloud-1
 
-This topic is inspired by the subject Inception. The goal is to deploy your site and the
-necessary docker infrastructure on an instance provided by a cloud provider.
+"Cloud-1" automates deploying Inception's infrastructure on a remote server via containers. Students leverage tools like Ansible to set up WordPress, PHPMyAdmin, etc., ensuring full automation and data persistence on server reboots. They manage resources within allocated credits, emphasizing real-world costs and security. The submission focuses on functional deployment scripts over visual presentation.
 
 # Tech used in the project
 
