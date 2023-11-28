@@ -13,6 +13,24 @@ necessary docker infrastructure on an instance provided by a cloud provider.
 ![Markup](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white) 
 ![Markup](https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white) 
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`URL`
+
+`MYSQL_USER`
+`MYSQL_PASSWORD`
+`MYSQL_ROOT_PASSWORD`
+
+`WORDPRESS_ROOT_LOGIN`
+`WORDPRESS_ROOT_EMAIL`
+`WORDPRESS_NAME`
+`WORDPRESS_USER_EMAIL`
+
+`FTP_USER`
+`FTP_PASSWORD`
+
 # Deployment
 # Ansible version
 The project is supposed to be in the cloud but for this example, we going to work 
